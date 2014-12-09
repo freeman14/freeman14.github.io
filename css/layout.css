@@ -1,3 +1,8 @@
+body{
+    min-width: 320px;
+    overflow: scroll;
+}
+
 /*HEADER*/
 
 .header{
@@ -9,11 +14,6 @@
 
 /*SEARCH RESULTS*/
 
-body{
-    min-width: 320px;
-    overflow: scroll;
-}
-
 .search-results{
     background: #f2f2f2;
     width: 100%;
@@ -21,8 +21,6 @@ body{
     position: relative;
     min-width: 320px;
     float: left;
-    height: 100%;
-    overflow: scroll;
 }
 
 .hotels-outer-container{

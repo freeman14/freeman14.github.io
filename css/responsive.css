@@ -1,7 +1,4 @@
 @media only screen and (max-width: 619px){
-    .hotel-panel{
-
-    }
 
     .hotels-outer-container{
         width: 100%;
@@ -30,6 +27,8 @@
 
     .search-results{
         width: 620px;
+        height: 100%;
+        overflow: scroll;
     }
 
     .map{
@@ -47,14 +46,16 @@
 
     .search-results{
         width: 50%;
+        height: 100%;
+        overflow: scroll;
     }
-    
+
     .map{
         min-width: 600px;
         max-width: 910px;
         overflow: hidden;
     }
-    
+
 }
 
 @media only screen and  (min-width: 1820px) and (max-width: 2719px){
@@ -65,6 +66,8 @@
 
     .search-results{
         width: 50%;
+        height: 100%;
+        overflow: scroll;
     }
 
     .map{
@@ -81,6 +84,8 @@
 
     .search-results{
         width: 1370px;
+        height: 100%;
+        overflow: scroll;
     }
 
     .map{
