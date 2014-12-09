@@ -29,6 +29,7 @@
         width: 620px;
         height: 100%;
         overflow: scroll;
+        -webkit-overflow-scrolling: touch;
     }
 
     .map{
@@ -48,6 +49,7 @@
         width: 50%;
         height: 100%;
         overflow: scroll;
+        -webkit-overflow-scrolling: touch;
     }
 
     .map{
@@ -68,6 +70,7 @@
         width: 50%;
         height: 100%;
         overflow: scroll;
+        -webkit-overflow-scrolling: touch;
     }
 
     .map{
@@ -86,6 +89,7 @@
         width: 1370px;
         height: 100%;
         overflow: scroll;
+        -webkit-overflow-scrolling: touch;
     }
 
     .map{
