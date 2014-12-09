@@ -1,0 +1,91 @@
+@media only screen and (max-width: 619px){
+    .hotel-panel{
+
+    }
+
+    .hotels-outer-container{
+        width: 100%;
+    }
+
+    .map{
+        display: none;
+    }
+}
+
+@media only screen and  (min-width: 620px) and (max-width: 919px){
+    .hotels-outer-container{
+        width: 50%;
+    }
+
+    .map{
+        display: none;
+    }
+}
+
+@media only screen and  (min-width: 920px) and (max-width: 1219px){
+
+    .hotels-outer-container{
+        width: 50%;
+    }
+
+    .search-results{
+        width: 620px;
+    }
+
+    .map{
+        min-width: 299px;
+        max-width: 600px;
+        overflow: hidden;
+    }
+}
+
+@media only screen and  (min-width: 1220px) and (max-width: 1819px){
+
+    .hotels-outer-container{
+        width: 50%;
+    }
+
+    .search-results{
+        width: 50%;
+    }
+    
+    .map{
+        min-width: 600px;
+        max-width: 910px;
+        overflow: hidden;
+    }
+    
+}
+
+@media only screen and  (min-width: 1820px) and (max-width: 2719px){
+
+    .hotels-outer-container{
+        width: 33.3%;
+    }
+
+    .search-results{
+        width: 50%;
+    }
+
+    .map{
+        min-width: 910px;
+        overflow: hidden;
+    }
+}
+
+@media only screen and  (min-width: 2720px){
+
+    .hotels-outer-container{
+        width: 446px;
+    }
+
+    .search-results{
+        width: 1370px;
+    }
+
+    .map{
+        min-width: 910px;
+        overflow: hidden;
+    }
+
+}
