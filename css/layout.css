@@ -2,6 +2,7 @@ body{
     min-width: 320px;
     overflow: scroll;
     padding-top: 50px;
+    font-family: 'Helvetica Neue' !important;
 }
 
 .clearfix:before, .clearfix:after {
@@ -80,6 +81,63 @@ body{
     height: 100%;
 }
 
+.hotel-old-price{
+    width: 140px;
+    height: 25px;
+    position: absolute;
+    text-decoration: line-through;
+    left: 0;
+    bottom: 45px;
+    background: #203540;
+    color: #fff;
+    font-size: 9px;
+    padding-top: 7px;
+    text-align: center;
+}
+
+.hotel-price{
+    width: 160px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    background: #203540;
+    color: #fff;
+    padding-top: 10px;
+    z-index: 5;
+}
+
+.hotel-price-vendor{
+    font-size: 12px;
+    width: 100%;
+    padding-left: 32px;
+    line-height: normal;
+}
+
+.hotel-price-vendor-price{
+    font-size: 21px;
+    width: 100%;
+    padding-left: 32px;
+    line-height: normal;
+}
+
+.hotel-price-discount{
+    position: absolute;
+    width: 55px;
+    height: 0;
+    right: 0;
+    top: 0;
+    border-left: 20px solid rgba(97, 50, 50, 0);
+    border-top: 20px solid #16b8d9;
+}
+
+.hotel-price-discount-inner{
+    font-size: 12px;
+    margin-top: -16px;
+    position: absolute;
+    margin-left: -3px;
+}
+
 .hotel-panel-information{
     position: relative;
     width: 100%;
@@ -91,3 +149,4 @@ body{
     padding-right: 20px;
     height: 100%;
 }
+
