@@ -1,0 +1,31 @@
+/* Buttons
+-------------------------------------------------- */
+
+/*Header*/
+.header-logo{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url("../../img/logo.png") center no-repeat;
+}
+
+.header-btn-calendar{
+    float: right;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url("../../img/calendar-icon.png") center no-repeat;
+    border: 0px;
+}
+
+.header-btn-map{
+    float: right;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url("../../img/map-icon.png") center no-repeat;
+    border: 0px;
+}
+
+/*/Header*/
+/* /Buttons */

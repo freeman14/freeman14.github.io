@@ -1,0 +1,14 @@
+/* Search results layout
+-------------------------------------------------- */
+
+.search-results {
+    background: #f2f2f2;
+    width: 100%;
+    min-width: 320px;
+    padding: 80px 10px 0px;
+    position: relative;
+    float: left;
+}
+
+/* /Search results layout
+-------------------------------------------------- */

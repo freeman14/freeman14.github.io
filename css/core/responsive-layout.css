@@ -1,6 +1,10 @@
+/* Layout responsive
+-------------------------------------------------- */
+
+/* Mobile devises with max-width 619px */
 @media only screen and (max-width: 619px){
 
-    .hotels-outer-container{
+    .hotel{
         width: 100%;
     }
 
@@ -8,9 +12,12 @@
         display: none;
     }
 }
+/* /Mobile devises with max-width 619px */
 
+/* Mobile devises and tablets with min-width 620px max-width 919px */
 @media only screen and  (min-width: 620px) and (max-width: 919px){
-    .hotels-outer-container{
+
+    .hotel{
         width: 50%;
     }
 
@@ -18,10 +25,12 @@
         display: none;
     }
 }
+/* /Mobile devises and tablets with min-width 620px max-width 919px */
 
+/* Tablets and small PC with min-width 920px max-width 1219px */
 @media only screen and  (min-width: 920px) and (max-width: 1219px){
 
-    .hotels-outer-container{
+    .hotel{
         width: 50%;
     }
 
@@ -38,10 +47,13 @@
         overflow: hidden;
     }
 }
+/* /Tablets and small PC with min-width 920px max-width 1219px */
 
+
+/* PC with min-width 1220px max-width 1819px */
 @media only screen and  (min-width: 1220px) and (max-width: 1819px){
 
-    .hotels-outer-container{
+    .hotel{
         width: 50%;
     }
 
@@ -59,10 +71,13 @@
     }
 
 }
+/* PC with min-width 1220px max-width 1819px */
 
+
+/* PC with min-width 1820px max-width 2719px */
 @media only screen and  (min-width: 1820px) and (max-width: 2719px){
 
-    .hotels-outer-container{
+    .hotel{
         width: 33.3%;
     }
 
@@ -78,10 +93,12 @@
         overflow: hidden;
     }
 }
+/* /PC with min-width 1820px max-width 2719px */
 
+/* PC with min-width 2719px */
 @media only screen and  (min-width: 2720px){
 
-    .hotels-outer-container{
+    .hotel{
         width: 446px;
     }
 
@@ -98,3 +115,6 @@
     }
 
 }
+/* /PC with min-width 2719px */
+
+/* /Layout responsive */
