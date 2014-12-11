@@ -36,9 +36,11 @@
 
     border: 1px solid rgba(238, 246, 250, 0.15);
     border-radius: 5px;
+
+    box-shadow: none;
 }
 
-.header-search_form input:focus{
+.header-search_form input:focus, .header-search_form input:hover{
     border: 1px solid rgba(238, 246, 250, 0.50);
 }
 
