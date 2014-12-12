@@ -1,0 +1,15 @@
+/* Header responsive
+-------------------------------------------------- */
+
+/* Tablets and small PC with min-width 920px max-width 1219px */
+@media only screen and  (min-width: 920px){
+
+    /*Hide open map btn*/
+    .header-btn-map{
+        display: none !important;
+    }
+}
+/* /Tablets and small PC with min-width 920px max-width 1219px */
+
+/* Header responsive
+-------------------------------------------------- */

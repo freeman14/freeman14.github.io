@@ -5,6 +5,7 @@
 @import "layout.css";
 @import "../module/hotel.css";
 @import "responsive-layout.css";
+@import "responsive-header.css";
 @import "buttons.css";
 @import "map.css";
 
