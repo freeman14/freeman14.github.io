@@ -19,13 +19,13 @@
 
 @media only screen and (max-width: 619px){
 
-    .layout.menu-open{
-        left: 80% !important;
-    }
+    /*.layout.menu-open{*/
+        /*left: 80% !important;*/
+    /*}*/
 
-    .off-canvas-menu.menu-open{
-        width: 80% !important;;
-    }
+    /*.off-canvas-menu.menu-open{*/
+        /*width: 80% !important;;*/
+    /*}*/
 }
 
 /* /Off canvas menu
