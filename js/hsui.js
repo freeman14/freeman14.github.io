@@ -87,13 +87,14 @@ HS.Init.prototype = HS.prototype = {
         //GET
         if(arguments.length == 1 && typeof obj == "string"){
             if (this[0].currentStyle) {
-                this[0].currentStyle(obj);
+                this[0].currentStyle(obj).replace(/[^\d]/g, '');
             } else if (window.getComputedStyle) {
-                return document.defaultView.getComputedStyle(this[0],null).getPropertyValue(obj);
+                return document.defaultView.getComputedStyle(this[0],null).getPropertyValue(obj).replace(/[^\d]/g, '');
             }
         }
         //SET
         if(arguments.length == 2){
+            console.log(arguments);
             for(var i = 0; i<this.length; i++) {
                 this[i].style[arguments[0]] = arguments[1];
             }
@@ -156,7 +157,6 @@ HS.Init.prototype = HS.prototype = {
         if(!this.length) return;
         if ('classList' in document.documentElement) {
             for(var i = 0; i<this.length; i++) {
-                console.log(this[i].classList);
                 this[i].classList.remove(c);
             }
         } else{

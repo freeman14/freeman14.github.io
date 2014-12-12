@@ -8,6 +8,7 @@
 @import "responsive-header.css";
 @import "buttons.css";
 @import "map.css";
+@import "off-canvas-menu.css";
 
 body{
     min-width: 320px;

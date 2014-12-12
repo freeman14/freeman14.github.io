@@ -1,0 +1,23 @@
+/* Off canvas menu
+-------------------------------------------------- */
+
+.layout.menu-open{
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+
+/*.off-canvas-menu{*/
+
+/*}*/
+
+/*.off-canvas-menu.menu-open{*/
+    /*visibility: visible;*/
+    /*height: 100%;*/
+/*display: inline-block;*/
+/*position: relative;*/
+/*visibility: hidden;*/
+/*}*/
+
+/* /Off canvas menu
+-------------------------------------------------- */

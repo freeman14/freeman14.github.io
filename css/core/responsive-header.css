@@ -8,6 +8,10 @@
     .header-btn-map{
         display: none !important;
     }
+
+    .header-search_form{
+        right: 60px;
+    }
 }
 /* /Tablets and small PC with min-width 920px max-width 1219px */
 
