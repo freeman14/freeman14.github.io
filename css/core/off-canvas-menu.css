@@ -2,8 +2,6 @@
 -------------------------------------------------- */
 .layout.menu-open{
     position: fixed;
-    right: 0;
-    width: 100%;
 }
 
 .off-canvas-menu{

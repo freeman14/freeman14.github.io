@@ -10,5 +10,10 @@
     float: left;
 }
 
+.layout{
+    position: absolute;
+    width: 100%;
+}
+
 /* /Search results layout
 -------------------------------------------------- */
