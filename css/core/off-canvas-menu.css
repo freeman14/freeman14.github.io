@@ -1,23 +1,32 @@
 /* Off canvas menu
 -------------------------------------------------- */
-
 .layout.menu-open{
-    position: absolute;
+    position: fixed;
     right: 0;
     width: 100%;
 }
 
-/*.off-canvas-menu{*/
+.off-canvas-menu{
 
-/*}*/
+}
 
-/*.off-canvas-menu.menu-open{*/
-    /*visibility: visible;*/
-    /*height: 100%;*/
-/*display: inline-block;*/
-/*position: relative;*/
-/*visibility: hidden;*/
-/*}*/
+.off-canvas-menu.menu-open{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    background: #CBEFF7;
+}
+
+@media only screen and (max-width: 619px){
+
+    .layout.menu-open{
+        left: 80% !important;
+    }
+
+    .off-canvas-menu.menu-open{
+        width: 80% !important;;
+    }
+}
 
 /* /Off canvas menu
 -------------------------------------------------- */

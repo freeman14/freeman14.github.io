@@ -5,15 +5,17 @@ var filtersBtn      =  HS().sClass('header-logo'),
 var filtersMenuOpen = false;
 filtersBtn.button(function(e){
     e.preventDefault();
-    var self = this.hsobj;
     if(filtersMenuOpen){
-        layout.removeClass('menu-open').css('left', '');
-        offCanvasMenu.removeClass('menu-open').css('left', '');
+        layout.removeClass('menu-open');
+        offCanvasMenu.removeClass('menu-open').css('width', '');
+        Velocity(HS().sClass('layout'), { left: 0 });
         filtersMenuOpen = false;
     } else {
-        var hotelPanelWidth = HS().sClass('search-results').css('width') / 2;
-        layout.addClass('menu-open').css('left', hotelPanelWidth+'px');
-        offCanvasMenu.css('width', hotelPanelWidth+'px').addClass('menu-open');
+        var hotelPanelWidth = HS().findOne('.hotel').css('width');
+        console.log(hotelPanelWidth);
+        layout.addClass('menu-open');
+        offCanvasMenu.css('width', hotelPanelWidth).addClass('menu-open');
+        Velocity(HS().sClass('layout'), { left: hotelPanelWidth });
         filtersMenuOpen = true;
     }
 });

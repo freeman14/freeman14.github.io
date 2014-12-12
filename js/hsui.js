@@ -32,7 +32,20 @@ HS.Init.prototype = HS.prototype = {
         this.selector = selector;
         this.selectorType = 'class';
         return merge(this.constructor(), elements);
+    },
 
+    findOne : function(selector){
+        //Clear obj before select
+        this.length = 0;
+        var element = document.querySelector(selector);
+
+        this.selector = selector;
+        this.selectorType = 'findOne';
+
+        if(isEmpty(element)) return this;
+        this.push.call( this, element);
+
+        return this
     },
 
     sId : function(selector){
@@ -87,9 +100,9 @@ HS.Init.prototype = HS.prototype = {
         //GET
         if(arguments.length == 1 && typeof obj == "string"){
             if (this[0].currentStyle) {
-                this[0].currentStyle(obj).replace(/[^\d]/g, '');
+                this[0].currentStyle(obj);
             } else if (window.getComputedStyle) {
-                return document.defaultView.getComputedStyle(this[0],null).getPropertyValue(obj).replace(/[^\d]/g, '');
+                return document.defaultView.getComputedStyle(this[0],null).getPropertyValue(obj);
             }
         }
         //SET
