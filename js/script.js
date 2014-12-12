@@ -3,7 +3,8 @@ var filtersBtn      =  HS().sClass('header-logo'),
     offCanvasMenu   =  HS().sClass('off-canvas-menu');
 
 var filtersMenuOpen = false;
-filtersBtn.button(function(){
+filtersBtn.button(function(e){
+    e.preventDefault();
     var self = this.hsobj;
     if(filtersMenuOpen){
         layout.removeClass('menu-open').css('left', '');
