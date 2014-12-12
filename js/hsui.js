@@ -107,7 +107,6 @@ HS.Init.prototype = HS.prototype = {
         }
         //SET
         if(arguments.length == 2){
-            console.log(arguments);
             for(var i = 0; i<this.length; i++) {
                 this[i].style[arguments[0]] = arguments[1];
             }

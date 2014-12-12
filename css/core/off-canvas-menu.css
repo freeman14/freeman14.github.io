@@ -1,19 +1,37 @@
 /* Off canvas menu
 -------------------------------------------------- */
-.layout.menu-open{
-    position: fixed;
-}
+.off-canvas-menu.open > .off-canvas-menu_mask{
+    background: rgba(0, 0, 0, 0.5);
 
-.off-canvas-menu{
-
-}
-
-.off-canvas-menu.menu-open{
     position: absolute;
-    bottom: 0;
     top: 0;
-    background: #CBEFF7;
+    bottom: 0;
+    width: 100%;
+
+    z-index: 30;
 }
+
+.filters{
+    width: 300px;
+
+    background: #fff;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+
+    transition: left 0.2s ease-out;
+
+    z-index: 40;
+}
+
+.off-canvas-menu.open > .filters{
+    position: fixed;
+    left: 0px;
+}
+
+
 
 @media only screen and (max-width: 619px){
 
