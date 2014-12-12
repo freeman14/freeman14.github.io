@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1515eb2a-6fe8-4f59-9d77-746dfeb37088" name="Default" comment="minor fix">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/core/header.css" afterPath="$PROJECT_DIR$/css/core/header.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/hsui.js" afterPath="$PROJECT_DIR$/js/hsui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/core/off-canvas-menu.css" afterPath="$PROJECT_DIR$/css/core/off-canvas-menu.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="fb52b56e-219b-4003-8905-dbffd5d4dad0" name="Rejected commit: Default" comment="minor fix" />
     <ignored path="freeman14.github.io.iws" />
@@ -95,8 +90,8 @@
       <file leaf-file-name="off-canvas-menu.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/core/off-canvas-menu.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47586206" vertical-offset="0" max-vertical-offset="795">
-              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.10344828" vertical-offset="0" max-vertical-offset="795">
+              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -556,8 +551,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/core/off-canvas-menu.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47586206" vertical-offset="0" max-vertical-offset="795">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.10344828" vertical-offset="0" max-vertical-offset="795">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
           <folding />
         </state>
       </provider>
