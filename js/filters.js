@@ -3,7 +3,6 @@ Grid.filters = (function(filters){
     var self = filters;
 
     var _filtersBtnOpen      = HS().sClass('header-logo'),
-        _layout              = HS().sClass('layout'),
         _offCanvasMenu       = HS().sClass('off-canvas-menu'),
         _offCanvasMenuMask   = HS().sClass('off-canvas-menu_mask'),
         _filtersCnt          = HS().sClass('filters'),
@@ -34,11 +33,13 @@ Grid.filters = (function(filters){
         }
 
         _offCanvasMenu.addClass('open');
+        Grid.layout.addClass('hidden');
         self.filtersOpenStatus = true;
     };
 
     self.closeFilterMenu = function(){
         _offCanvasMenu.removeClass('open');
+        Grid.layout.removeClass('hidden');
         self.filtersOpenStatus = false;
     };
 

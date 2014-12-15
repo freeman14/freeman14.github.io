@@ -24,17 +24,19 @@ Grid.hotel = (function(hotel){
 
     self.openHotel = function(){
         _oneHotelCnt.addClass('open');
+        Grid.layout.addClass('hidden');
         self.openHotelStatus = true;
     };
 
     self.closeHotel = function(){
         _oneHotelCnt.removeClass('open');
+        Grid.layout.removeClass('hidden');
         self.openHotelStatus = false;
     };
 
     self.setOpenHotelWidth = function(){
         var width = HS().findOne('.hotel').css('width');
-        var left  = HS().sClass('search-results').css('width');
+        var left  = Grid.searchResult.css('width');
         _oneHotelCnt.css({
             width : width,
             left  : left
