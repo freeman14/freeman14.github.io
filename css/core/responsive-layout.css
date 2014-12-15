@@ -11,6 +11,12 @@
     .map{
         display: none;
     }
+
+    .hotel-open{
+        left: 0px !important;
+        width: 100% !important;
+        z-index: 20 !important;
+    }
 }
 /* /Mobile devises with max-width 619px */
 
@@ -24,8 +30,26 @@
     .map{
         display: none;
     }
+
+    .hotel-open{
+        left: 0px !important;
+        width: 50% !important;
+        z-index: 20 !important;
+    }
 }
 /* /Mobile devises and tablets with min-width 620px max-width 919px */
+
+/* Tablets and small PC with min-width 1219px*/
+@media only screen and  (min-width: 1219px){
+
+    .filters{
+        transition: all .1s ease-out;
+    }
+
+    .off-canvas-menu_mask{
+        transition: all 0.1s ease-out 0.1s;
+    }
+}
 
 /* Tablets and small PC with min-width 920px max-width 1219px */
 @media only screen and  (min-width: 920px) and (max-width: 1219px){

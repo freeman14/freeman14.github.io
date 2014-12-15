@@ -22,9 +22,9 @@
 }
 
 .off-canvas-menu_mask{
-    transition: all 0.1s ease-out 0.1s;
 
     visibility: hidden;
+
 }
 
 .filters{
@@ -33,8 +33,6 @@
     position: absolute;
     top: 0;
     bottom: 0;
-
-    transition: left .1s ease-out;
 
     z-index: 40;
 

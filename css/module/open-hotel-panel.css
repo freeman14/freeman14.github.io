@@ -1,0 +1,27 @@
+/* Open hotel layout
+-------------------------------------------------- */
+
+.hotel-open{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    display: none;
+
+    z-index: 10;
+
+    padding: 60px 0 0 0;
+
+    text-align: center;
+}
+
+.hotel-open.open{
+    position: fixed;
+
+    display: inline-block;
+
+    background: #fff;
+}
+
+/* /Open hotel layout
+-------------------------------------------------- */

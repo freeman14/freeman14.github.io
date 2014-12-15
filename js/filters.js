@@ -10,7 +10,7 @@ Grid.filters = (function(filters){
         _filtersBtnClose     = HS().sClass('filters-btn-close');
 
 
-    self.filtersMenuOpen = false;
+    self.filtersOpenStatus = false;
 
     _filtersBtnOpen.button(function(e){
         e.preventDefault();
@@ -29,20 +29,20 @@ Grid.filters = (function(filters){
 
     self.openFilterMenu = function(){
         if(Grid.resizeChange){
-            self.filterMenuWidth();
+            self.setFilterMenuWidth();
             Grid.resizeChange = false;
         }
 
         _offCanvasMenu.addClass('open');
-        self.filtersMenuOpen = true;
+        self.filtersOpenStatus = true;
     };
 
     self.closeFilterMenu = function(){
         _offCanvasMenu.removeClass('open');
-        self.filtersMenuOpen = false;
+        self.filtersOpenStatus = false;
     };
 
-    self.filterMenuWidth = function(){
+    self.setFilterMenuWidth = function(){
         var width = HS().findOne('.hotel').css('width');
         _filtersCnt.css({
             width : width,
@@ -55,12 +55,12 @@ Grid.filters = (function(filters){
         Grid.resizeChange = true;
 
         setTimeout(function(){
-            self.filterMenuWidth();
+            self.setFilterMenuWidth();
         }, 1000);
     });
 
     HS.ready(function(){
-        self.filterMenuWidth();
+        self.setFilterMenuWidth();
     });
 
     return self;

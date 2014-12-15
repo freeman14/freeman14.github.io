@@ -3,12 +3,14 @@
 
 @import "header.css";
 @import "layout.css";
-@import "../module/hotel.css";
 @import "responsive-layout.css";
 @import "responsive-header.css";
 @import "buttons.css";
 @import "map.css";
 @import "off-canvas-menu.css";
+
+@import "../module/hotel.css";
+@import "../module/open-hotel-panel.css";
 
 body{
     min-width: 320px;
