@@ -1,0 +1,67 @@
+Grid.filters = (function(filters){
+
+    var self = filters;
+
+    var _filtersBtnOpen      = HS().sClass('header-logo'),
+        _layout              = HS().sClass('layout'),
+        _offCanvasMenu       = HS().sClass('off-canvas-menu'),
+        _offCanvasMenuMask   = HS().sClass('off-canvas-menu_mask'),
+        _filtersCnt          = HS().sClass('filters'),
+        _filtersBtnClose     = HS().sClass('filters-btn-close');
+
+
+    self.filtersMenuOpen = false;
+
+    _filtersBtnOpen.button(function(e){
+        e.preventDefault();
+        self.openFilterMenu();
+    });
+
+    _filtersBtnClose.button(function(e){
+        e.preventDefault();
+        self.closeFilterMenu();
+    });
+
+    _offCanvasMenuMask.button(function(e){
+        e.preventDefault();
+        self.closeFilterMenu();
+    });
+
+    self.openFilterMenu = function(){
+        if(Grid.resizeChange){
+            self.filterMenuWidth();
+            Grid.resizeChange = false;
+        }
+
+        _offCanvasMenu.addClass('open');
+        self.filtersMenuOpen = true;
+    };
+
+    self.closeFilterMenu = function(){
+        _offCanvasMenu.removeClass('open');
+        self.filtersMenuOpen = false;
+    };
+
+    self.filterMenuWidth = function(){
+        var width = HS().findOne('.hotel').css('width');
+        _filtersCnt.css({
+            width : width,
+            left  : '-' + width
+        });
+    };
+
+    HS.addEvent(window, 'resize', function(){
+        self.closeFilterMenu();
+        Grid.resizeChange = true;
+
+        setTimeout(function(){
+            self.filterMenuWidth();
+        }, 1000);
+    });
+
+    HS.ready(function(){
+        self.filterMenuWidth();
+    });
+
+    return self;
+})(Grid.filters || {});

@@ -4,8 +4,8 @@
 /* Mobile devises with max-width 619px */
 @media only screen and (max-width: 619px){
 
-    .hotel{
-        width: 100%;
+    .column{
+        width: 100% !important;
     }
 
     .map{
@@ -17,7 +17,7 @@
 /* Mobile devises and tablets with min-width 620px max-width 919px */
 @media only screen and  (min-width: 620px) and (max-width: 919px){
 
-    .hotel{
+    .column{
         width: 50%;
     }
 
@@ -30,7 +30,7 @@
 /* Tablets and small PC with min-width 920px max-width 1219px */
 @media only screen and  (min-width: 920px) and (max-width: 1219px){
 
-    .hotel{
+    .column{
         width: 50%;
     }
 
@@ -53,7 +53,7 @@
 /* PC with min-width 1220px max-width 1819px */
 @media only screen and  (min-width: 1220px) and (max-width: 1819px){
 
-    .hotel{
+    .column{
         width: 50%;
     }
 
@@ -77,7 +77,7 @@
 /* PC with min-width 1820px max-width 2719px */
 @media only screen and  (min-width: 1820px) and (max-width: 2719px){
 
-    .hotel{
+    .column{
         width: 33.3%;
     }
 
@@ -98,7 +98,7 @@
 /* PC with min-width 2719px */
 @media only screen and  (min-width: 2720px){
 
-    .hotel{
+    .column{
         width: 446px;
     }
 

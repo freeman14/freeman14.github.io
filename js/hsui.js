@@ -45,7 +45,7 @@ HS.Init.prototype = HS.prototype = {
         if(isEmpty(element)) return this;
         this.push.call( this, element);
 
-        return this
+        return this;
     },
 
     sId : function(selector){
@@ -288,7 +288,6 @@ HS.Init.prototype = HS.prototype = {
     on : function(event, handler, context){
         if(typeof event != 'string' || typeof  handler != 'function' || !this.length) return this;
         if(context && typeof context == 'string'){
-            console.log('a');
             var parent = HS().find(context);
             if(parent.length == 0) return;
 
@@ -437,6 +436,28 @@ HS.ajax = function(type, url, async){
         xmlhttp = new XMLHttpRequest();
     }
     return xmlhttp;
+};
+
+HS.ready = function ready(fn) {
+    if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', fn);
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+            if (document.readyState === 'interactive')
+                fn();
+        });
+    }
+};
+
+HS.addEvent = function(elem, type, eventHandle) {
+    if (elem == null || typeof(elem) == 'undefined') return;
+    if ( elem.addEventListener ) {
+        elem.addEventListener( type, eventHandle, false );
+    } else if ( elem.attachEvent ) {
+        elem.attachEvent( "on" + type, eventHandle );
+    } else {
+        elem["on"+type]=eventHandle;
+    }
 };
 
 //For internal use only.

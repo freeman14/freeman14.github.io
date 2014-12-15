@@ -10,12 +10,19 @@
     <!--<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />-->
 </head>
 <body>
+
 <!--Off canvas menu-->
 
-<div class="off-canvas-menu">
+<div class="off-canvas-menu column">
     <div class="off-canvas-menu_mask"></div>
-    <div class="filters"></div>
+    <div class="filters column hidescroll">
+        <div class="filters-btn-close"></div>
+        <img src="img/filters.jpg">
+    </div>
 </div>
+
+<!--Layout-->
+
 <div class="layout">
     <div class="header">
         <div class="header-logo">
@@ -34,7 +41,9 @@
 
     </div>
     <div class="search-results clearfix hidescroll">
-        <div class="hotel">
+        <!--Grid-->
+
+        <div class="hotel column">
             <div class="hotel-panel">
                 <div class="hotel-panel_image">
                     <div class="hotel-panel_image-container">
@@ -58,7 +67,7 @@
                 </div>
             </div>
         </div>
-        <div class="hotel">
+        <div class="hotel column">
             <div class="hotel-panel">
                 <div class="hotel-panel_image">
                     <div class="hotel-panel_image-container">
@@ -82,7 +91,7 @@
                 </div>
             </div>
         </div>
-        <div class="hotel">
+        <div class="hotel column">
             <div class="hotel-panel">
                 <div class="hotel-panel_image">
                     <div class="hotel-panel_image-container">
@@ -106,7 +115,7 @@
                 </div>
             </div>
         </div>
-        <div class="hotel">
+        <div class="hotel column">
             <div class="hotel-panel">
                 <div class="hotel-panel_image">
                     <div class="hotel-panel_image-container">
@@ -130,7 +139,7 @@
                 </div>
             </div>
         </div>
-        <div class="hotel">
+        <div class="hotel column">
             <div class="hotel-panel">
                 <div class="hotel-panel_image">
                     <div class="hotel-panel_image-container">
@@ -154,7 +163,7 @@
                 </div>
             </div>
         </div>
-        <div class="hotel">
+        <div class="hotel column">
             <div class="hotel-panel">
                 <div class="hotel-panel_image">
                     <div class="hotel-panel_image-container">
@@ -178,7 +187,7 @@
                 </div>
             </div>
         </div>
-        <div class="hotel">
+        <div class="hotel column">
             <div class="hotel-panel">
                 <div class="hotel-panel_image">
                     <div class="hotel-panel_image-container">
@@ -202,7 +211,7 @@
                 </div>
             </div>
         </div>
-        <div class="hotel">
+        <div class="hotel column">
             <div class="hotel-panel">
                 <div class="hotel-panel_image">
                     <div class="hotel-panel_image-container">
@@ -226,7 +235,7 @@
                 </div>
             </div>
         </div>
-        <div class="hotel">
+        <div class="hotel column">
             <div class="hotel-panel">
                 <div class="hotel-panel_image">
                     <div class="hotel-panel_image-container">
@@ -259,7 +268,8 @@
 <!--<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>-->
 <script src="js/velocity.min.js"></script>
 <script src="js/hsui.js"></script>
-<script src="js/script.js"></script>
+<script src="js/grid.js"></script>
+<script src="js/filters.js"></script>
 
 </body>
 </html>

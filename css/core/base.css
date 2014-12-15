@@ -26,6 +26,10 @@ body{
     clear: both;
 }
 
+.hidescroll{
+    overflow: scroll;
+}
+
 .hidescroll::-webkit-scrollbar {
     display: none;
 }
