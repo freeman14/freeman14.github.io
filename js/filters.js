@@ -1,4 +1,4 @@
-Grid.filters = (function(filters){
+Grid.filtersModule = (function(filters){
 
     var self = filters;
 
@@ -7,7 +7,6 @@ Grid.filters = (function(filters){
         _offCanvasMenuMask   = HS().sClass('off-canvas-menu_mask'),
         _filtersCnt          = HS().sClass('filters'),
         _filtersBtnClose     = HS().sClass('filters-btn-close');
-
 
     self.filtersOpenStatus = false;
 
@@ -69,4 +68,4 @@ Grid.filters = (function(filters){
     });
 
     return self;
-})(Grid.filters || {});
+})(Grid.filtersModule || {});
