@@ -4,8 +4,6 @@ Grid.hotel = (function(hotel){
     var _hotels         = HS().sClass('hotel'),
         _oneHotelCnt    = HS().sClass('hotel-open');
 
-    console.log(_hotels);
-
     self.openHotelStatus = false;
 
     _hotels.button(function(e){
@@ -35,10 +33,10 @@ Grid.hotel = (function(hotel){
     };
 
     self.setOpenHotelWidth = function(){
-        var width = HS().findOne('.hotel').css('width');
+        var width = parseFloat(HS().findOne('.hotel').css('width')) + 20;
         var left  = Grid.searchResult.css('width');
         _oneHotelCnt.css({
-            width : width,
+            width : width + 'px',
             left  : left
         });
     };
@@ -49,6 +47,10 @@ Grid.hotel = (function(hotel){
         setTimeout(function(){
             self.setOpenHotelWidth();
         }, 1000)
+    });
+
+    HS.addEvent(window, 'keyup', function(e){
+        self.closeHotel();
     });
 
     HS.ready(function(){

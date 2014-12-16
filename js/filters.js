@@ -60,6 +60,10 @@ Grid.filters = (function(filters){
         }, 1000);
     });
 
+    HS.addEvent(window, 'keyup', function(e){
+        self.closeFilterMenu();
+    });
+
     HS.ready(function(){
         self.setFilterMenuWidth();
     });
