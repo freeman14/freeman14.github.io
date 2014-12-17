@@ -360,7 +360,7 @@ HS.FastButton.prototype.onTouchStart = function(event) {
     event.stopPropagation();
 
     this.element.style['background'] = this.touchstartColor;
-
+    this.handler(event);
     this.element.addEventListener('touchend', this, false);
     document.body.addEventListener('touchmove', this, false);
 
@@ -417,9 +417,6 @@ HS.clickbuster.onClick = function(event) {
 document.addEventListener('click', HS.clickbuster.onClick, true);
 HS.clickbuster.coordinates = [];
 
-//new HS.FastButton(document.querySelector('.wrapper'), function(e){
-//    console.log(e.type);
-//});
 
 HS.ajax = function(type, url, async){
     var xmlhttp;

@@ -82,7 +82,6 @@ Grid.mapModule = (function(map){
         self.getCurrentCenter();
         HS.addEvent(window, 'resize', function() {
             self.setCurrentCenter();
-            console.log('e');
         });
     };
 
