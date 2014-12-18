@@ -30,6 +30,7 @@ body{
 
 .hidescroll{
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .hidescroll::-webkit-scrollbar {

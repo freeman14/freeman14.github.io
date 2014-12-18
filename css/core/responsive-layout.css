@@ -84,6 +84,7 @@
     .search-results{
         width: 50%;
         height: 100%;
+
         overflow: scroll;
         -webkit-overflow-scrolling: touch;
     }
@@ -91,6 +92,7 @@
     .map{
         min-width: 600px;
         max-width: 910px;
+
         overflow: hidden;
     }
 
@@ -102,14 +104,30 @@
 @media only screen and  (min-width: 1820px) and (max-width: 2719px){
 
     .column{
-        width: 33.3%;
+        width: 50%;
+    }
+
+    .off-canvas-menu_mask{
+        display: none !important;
+    }
+
+    .filters{
+        width: 16.7% !important;
+
+        left: 0 !important;
+
+        visibility: visible !important;
+
+        z-index: 30 !important;
     }
 
     .search-results{
-        width: 50%;
+        width: 33.3%;
         height: 100%;
+
+        margin-left: 16.7%;
+
         overflow: scroll;
-        -webkit-overflow-scrolling: touch;
     }
 
     .map{
@@ -124,6 +142,16 @@
 
     .column{
         width: 446px;
+    }
+
+    .filters{
+        width: 446px !important;
+
+        left: 0 !important;
+
+        visibility: visible !important;
+
+        z-index: 30 !important;
     }
 
     .search-results{
