@@ -38,7 +38,9 @@ Grid.filtersModule = (function(filters){
 
     self.closeFilterMenu = function(){
         _offCanvasMenu.removeClass('open');
-        Grid.layout.removeClass('hidden');
+        if(!Grid.hotelModule.openHotelStatus){
+            Grid.layout.removeClass('hidden');
+        }
         self.filtersOpenStatus = false;
     };
 
