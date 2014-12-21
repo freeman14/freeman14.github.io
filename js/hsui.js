@@ -399,7 +399,6 @@ HS.clickbuster.preventGhostClick = function(x, y) {
 };
 
 HS.clickbuster.pop = function() {
-    alert('a');
     HS.clickbuster.coordinates.splice(0, 2);
 };
 
