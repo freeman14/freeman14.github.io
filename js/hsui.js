@@ -360,7 +360,6 @@ HS.FastButton.prototype.onTouchStart = function(event) {
     event.stopPropagation();
 
     this.element.style['background'] = this.touchstartColor;
-    this.handler(event);
     this.element.addEventListener('touchend', this, false);
     document.body.addEventListener('touchmove', this, false);
 
@@ -396,7 +395,7 @@ HS.clickbuster = function() {}
 
 HS.clickbuster.preventGhostClick = function(x, y) {
     HS.clickbuster.coordinates.push(x, y);
-    window.setTimeout(HS.pop, 2500);
+    window.setTimeout(HS.clickbuster.pop(), 2500);
 };
 
 HS.clickbuster.pop = function() {
