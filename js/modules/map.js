@@ -59,7 +59,7 @@ Grid.mapModule = (function(map){
             count++;
             var hotel = hotels[i];
 
-            if(count > 20){
+            if(count > 10){
                 var icon = new google.maps.MarkerImage('img/map/marker-mini.png', null, null, null, new google.maps.Size(10, 10));
             } else{
                 var icon = new google.maps.MarkerImage('img/map/marker.png', null, null, null, new google.maps.Size(50, 38));
