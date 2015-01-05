@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1515eb2a-6fe8-4f59-9d77-746dfeb37088" name="Default" comment="minor fix">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/comet.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/hotels.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/modules/filters/ll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/modules/modules.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/core/url.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/filters.js" afterPath="$PROJECT_DIR$/js/modules/filters.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/grid.js" afterPath="$PROJECT_DIR$/js/core/grid.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/hotel-open.js" afterPath="$PROJECT_DIR$/js/modules/hotel-open.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/hsui.js" afterPath="$PROJECT_DIR$/js/core/hsui.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/map.js" afterPath="$PROJECT_DIR$/js/modules/map.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/modules/map.js" afterPath="$PROJECT_DIR$/js/modules/map.js" />
     </list>
     <list id="fb52b56e-219b-4003-8905-dbffd5d4dad0" name="Rejected commit: Default" comment="minor fix" />
     <ignored path="freeman14.github.io.iws" />
@@ -100,16 +89,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modules.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/modules/modules.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="comet.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/comet.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -123,8 +102,8 @@
       <file leaf-file-name="map.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/modules/map.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47724137" vertical-offset="584" max-vertical-offset="1965">
-              <caret line="62" column="164" selection-start-line="62" selection-start-column="164" selection-end-line="62" selection-end-column="164" />
+            <state vertical-scroll-proportion="0.51862067" vertical-offset="584" max-vertical-offset="1995">
+              <caret line="64" column="122" selection-start-line="64" selection-start-column="122" selection-end-line="64" selection-end-column="122" />
               <folding />
             </state>
           </provider>
@@ -274,6 +253,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="freeman14.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="freeman14.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="freeman14.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="freeman14.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -428,13 +439,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/core/icons.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="180">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="4260">
@@ -805,10 +809,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/map/marker-mini.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/modules/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47724137" vertical-offset="584" max-vertical-offset="1965">
-          <caret line="62" column="164" selection-start-line="62" selection-start-column="164" selection-end-line="62" selection-end-column="164" />
+        <state vertical-scroll-proportion="0.51862067" vertical-offset="584" max-vertical-offset="1995">
+          <caret line="64" column="122" selection-start-line="64" selection-start-column="122" selection-end-line="64" selection-end-column="122" />
           <folding />
         </state>
       </provider>

@@ -60,7 +60,9 @@ Grid.mapModule = (function(map){
             var hotel = hotels[i];
 
             if(count > 20){
-                var icon = new google.maps.MarkerImage('https://storage.googleapis.com/support-kms-prod/SNP_2752125_en_v0', null, null, null, new google.maps.Size(6, 6));
+                var icon = new google.maps.MarkerImage('img/map/marker-mini.png', null, null, null, new google.maps.Size(10, 10));
+            } else{
+                var icon = new google.maps.MarkerImage('img/map/marker.png', null, null, null, new google.maps.Size(50, 38));
             }
 
             var marker = new google.maps.Marker({
