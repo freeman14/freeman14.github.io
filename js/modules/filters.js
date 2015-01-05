@@ -1,4 +1,4 @@
-Grid.filtersModule = (function(filters){
+Grid.filters = (function(filters){
 
     var self = filters;
 
@@ -70,4 +70,4 @@ Grid.filtersModule = (function(filters){
     });
 
     return self;
-})(Grid.filtersModule || {});
+})(Grid.filters || {});

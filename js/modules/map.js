@@ -6,54 +6,10 @@ Grid.mapModule = (function(map){
             lat: 40.7567,
             lng: -73.9865
         },
-        polygonCoordinates: {
-            0: {
-                0: "40.48109",
-                1: "-74.25962"
-            },
-            1: {
-                0: "40.587378",
-                1: "-73.719557"
-            },
-            2: {
-                0: "40.752023",
-                1: "-73.703151"
-            },
-            3: {
-                0: "40.874413",
-                1: "-73.756228"
-            },
-            4: {
-                0: "40.911242",
-                1: "-73.896595"
-            },
-            5: {
-                0: "40.914684",
-                1: "-73.911574"
-            },
-            6: {
-                0: "40.72615",
-                1: "-74.18348"
-            },
-            7: {
-                0: "40.67699",
-                1: "-74.22474"
-            },
-            8: {
-                0: "40.48109",
-                1: "-74.25962"
-            },
-            9: {
-                0: "40.48109",
-                1: "-74.25962"
-            }
-        },
         zoom: 9
     };
 
     self.init = function(){
-        if(typeof google != 'object') return
-
         var properties = {
             zoom                : self.options.zoom,
             panControl          : false,
@@ -65,6 +21,7 @@ Grid.mapModule = (function(map){
                 style: google.maps.ZoomControlStyle.SMALL,
                 position: google.maps.ControlPosition.RIGHT_BOTTOM
             },
+            //center              : new google.maps.LatLng(self.options.latLng.lat , self.options.latLng.lng),
             center              : new google.maps.LatLng(self.options.latLng.lat , self.options.latLng.lng),
             minZoom             : 8,
             maxZoom             : 18,
@@ -78,11 +35,45 @@ Grid.mapModule = (function(map){
             }]
         };
 
-        self.map = new google.maps.Map(document.getElementById('map'), properties);
+        //Map init
+
+        try{
+            self.map = new google.maps.Map(document.getElementById('map'), properties);
+        } catch(e){
+            throw new Error('Could not initialize map: ' + e.message);
+        }
+
+        self.addMarkers(hotels);
+
         self.getCurrentCenter();
+
+        //
         HS.addEvent(window, 'resize', function() {
             self.setCurrentCenter();
         });
+    };
+
+    self.addMarkers = function(hotels){
+        var count = 0;
+        for(var i=0;i<hotels.length;i++) {
+            count++;
+            var hotel = hotels[i];
+
+            if(count > 20){
+                var icon = new google.maps.MarkerImage('https://storage.googleapis.com/support-kms-prod/SNP_2752125_en_v0', null, null, null, new google.maps.Size(6, 6));
+            }
+
+            var marker = new google.maps.Marker({
+                id: hotel.id,
+                position: new google.maps.LatLng(hotel.lat, hotel.lng),
+                map: self.map,
+                icon: icon,
+                il: hotel.il,
+                title: hotel.n,
+                price: hotel._p,
+                optimized: false
+            });
+        }
     };
 
     self.getCurrentCenter = function(){
@@ -103,10 +94,12 @@ Grid.mapModule = (function(map){
 
         // duplicating the first point to the end of the array
         // and create google lant/lng coordinates
-        for(var i = 0; i < self.options.polygonCoordinates.length; ++i){
+        for(var i = 0; i < self.options.polygonCoordinates.length; i++){
             j++;
+            console.log(i);
             var lat = self.options.polygonCoordinates[i][0];
             var lng = self.options.polygonCoordinates[i][1];
+            console.log(self.options.polygonCoordinates[i][0]);
             googleMapsPolygonCoordinates.push(new google.maps.LatLng(lat, lng));
             if(self.options.polygonCoordinates.length == j){
                 googleMapsPolygonCoordinates.push(new google.maps.LatLng(self.options.polygonCoordinates[0][0], self.options.polygonCoordinates[0][1]));
@@ -126,8 +119,6 @@ Grid.mapModule = (function(map){
 
         self.polygonBigMap.setMap(Grid.mapModule.map);
     };
-
-
 
     return self;
 })(Grid.mapModule || {});

@@ -2,9 +2,9 @@
 var Grid =(function(Grid){
     var self = Grid;
 
-    self.body           = HS().findOne('body');
-    self.layout         = HS().sClass('layout');
-    self.searchResult   = HS().sClass('search-results');
+    self.body = HS().findOne('body');
+    self.layout = HS().sClass('layout');
+    self.searchResult = HS().sClass('search-results');
 
     self.resizeChange = false;
     self.isMobile = !parseFloat(self.body.css('width'))>919;
@@ -29,4 +29,5 @@ HS.ready(function(){
         script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyBJrDk9-JHmQYqBq_TmcnRweesbS9xyo90&sensor=true&libraries=places&language=ru&callback=Grid.mapModule.init";
         document.body.appendChild(script);
     })();
+
 });

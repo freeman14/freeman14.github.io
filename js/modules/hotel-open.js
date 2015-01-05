@@ -1,10 +1,10 @@
 Grid.hotelModule = (function(hotel){
     var self = hotel;
 
+    //Private
+
     var _hotels         = HS().sClass('hotel'),
         _oneHotelCnt    = HS().sClass('hotel-open');
-
-    self.openHotelStatus = false;
 
     _hotels.button(function(e){
         e.preventDefault();
@@ -19,6 +19,10 @@ Grid.hotelModule = (function(hotel){
         e.preventDefault();
         self.closeHotel();
     });
+
+    //Public
+
+    self.openHotelStatus = false;
 
     self.openHotel = function(){
         _oneHotelCnt.addClass('open');

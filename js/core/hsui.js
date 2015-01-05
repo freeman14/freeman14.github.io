@@ -456,6 +456,37 @@ HS.addEvent = function(elem, type, eventHandle) {
     }
 };
 
+HS.mergeRecursive = function MergeRecursive(defaults, options) {
+    for (var p in options) {
+        try {
+            // Property in destination object set; update its value.
+            if ( options[p].constructor==Object ) {
+                defaults[p] = MergeRecursive(defaults[p], options[p]);
+            } else {
+                defaults[p] = options[p];
+            }
+        } catch(e) {
+            // Property in destination object not set; create it and set its value.
+            defaults[p] = options[p];
+        }
+    }
+    return defaults;
+};
+
+HS.merge = function( first, second ) {
+    var len = +second.length,
+        j = 0,
+        i = first.length;
+
+    for ( ; j < len; j++ ) {
+        first[ i++ ] = second[ j ];
+    }
+
+    first.length = i;
+
+    return first;
+}
+
 //For internal use only.
 HS.prototype.push = Array.prototype.push;
 HS.prototype.splice = Array.prototype.splice;
