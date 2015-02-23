@@ -1,17 +1,9 @@
 Grid.mapModule = (function(map){
     var self = map;
 
-    self.options = {
-        latLng: {
-            lat: 40.7567,
-            lng: -73.9865
-        },
-        zoom: 9
-    };
-
     self.init = function(){
         var properties = {
-            zoom                : self.options.zoom,
+            zoom                : Grid.mapOption.zoom,
             panControl          : false,
             scaleControl        : false,
             streetViewControl   : false,
@@ -22,7 +14,7 @@ Grid.mapModule = (function(map){
                 position: google.maps.ControlPosition.RIGHT_BOTTOM
             },
             //center              : new google.maps.LatLng(self.options.latLng.lat , self.options.latLng.lng),
-            center              : new google.maps.LatLng(self.options.latLng.lat , self.options.latLng.lng),
+            center              : new google.maps.LatLng(Grid.mapOption.lat , Grid.mapOption.lng),
             minZoom             : 8,
             maxZoom             : 18,
             styles              : [{
@@ -43,7 +35,7 @@ Grid.mapModule = (function(map){
             throw new Error('Could not initialize map: ' + e.message);
         }
 
-        self.addMarkers(hotels);
+        //self.addMarkers(hotels);
 
         self.getCurrentCenter();
 

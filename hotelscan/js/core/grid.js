@@ -9,10 +9,28 @@ var Grid =(function(Grid){
     self.resizeChange = false;
     self.isMobile = !parseFloat(self.body.css('width'))>919;
 
+    self.mapOption = {
+        lat: 40.7567,
+        lng: -73.9865,
+        zoom: 9
+    };
+
+
+    /**
+     * setIsMobile() set isMobile to true or false
+     *
+     *
+     * @return {Element} isMobile
+     */
     self.setIsMobile = function(){
         return self.isMobile = !parseFloat(self.body.css('width'))>919;
     };
 
+
+    /**
+     * Handle when window resize
+     *
+     */
     HS.addEvent(window, 'resize', function(){
         self.setIsMobile();
     });

@@ -4,11 +4,10 @@ Grid.filters.price = (function(price){
     self.name = 'price';
     self.active = false;
     self.minPrice = 0;
-    self.maxPrice = 9;
+    self.maxPrice = 10;
     self.slider = {};
 
     //TODO add toLocalCur and hConf
-    console.log('s');
 
     self.init = (function(){
         if ((Grid.url.hash.minPrice || Grid.url.hash.maxPrice) && !(Grid.url.hash.minPrice == '0' && Grid.url.hash.maxPrice == '0')) {
@@ -17,10 +16,10 @@ Grid.filters.price = (function(price){
             self.active = true;
         }
 
-        console.log('s');
-
         self.slider = new Slider('#price-slider', {
-            range : true
+            min : 0,
+            max : 10,
+            range: true
         });
 
     })();
